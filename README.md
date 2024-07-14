@@ -36,6 +36,11 @@ The `FrustumCullingObject` component handles the culling of individual objects.
 - **AddColliders**: Adds additional colliders to be controlled by visibility changes.
 - **FetchComponents**: Fetches associated components (renderers, colliders, particle systems, and behaviours).
 
+#### Events
+- **onBecomeVisible**: Called when object becomes visible
+- **onBecomeInvisible**: Called when object becomes invisible
+- **onCalculateBounds**: Called when bounds are calculated. You can modify bounds result in this event.
+
 ### FrustumCullingController
 The `FrustumCullingController` manages the culling process for all `FrustumCullingObject` instances.
 
@@ -82,7 +87,7 @@ The `FrustumCullingController` manages the culling process for all `FrustumCulli
   frustumCullingController.ChangeTargetCamera(FrustumCullingSystemCameraTarget.Selected, myCustomCamera);
   ```
 
-### Performance Tips
+## Performance Tips
 - **Adjust Buffer Size:** Ensure the buffer size is appropriate for the number of objects being culled.
 - **Set Refresh Rate:** Adjust the refresh rate based on the performance needs of your application.
 - **Optimize Bounds Calculation:** Use appropriate bounds sources to minimize the overhead of bounds calculation.
