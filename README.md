@@ -1,7 +1,7 @@
 # Frustum Culling Solution for Unity
 
 ## Overview
-The **Frustum Culling Solution** is a powerful Unity asset that enhances performance by culling both dynamic and static objects without relying on Unity’s built-in system. This solution does not require scene baking, allowing for the dynamic addition and spawning of objects. It leverages Unity's Burst Jobs to optimize calculations, ensuring efficient and rapid culling operations. It will work best on top down views. Its not using ray casting just checks if objects are in plane frustrum.
+The **Frustum Culling Solution** is Unity asset that enhances performance by culling both dynamic and static objects without relying on Unity’s built-in system. This solution does not require scene baking, allowing for the dynamic addition and spawning of objects. It leverages Unity's Burst Jobs to optimize calculations, ensuring efficient and rapid culling operations. It will work best on top down views. Its not using ray casting just checks if objects are in plane frustrum.
 
 ## Features
 - **Dynamic and Static Object Culling**: Supports both dynamic and static objects.
