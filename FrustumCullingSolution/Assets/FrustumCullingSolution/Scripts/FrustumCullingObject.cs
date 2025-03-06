@@ -79,6 +79,7 @@ namespace FrustumCullingSolution.Scripts
             var currentPosition = transform.position;
             if (Vector3.Distance(currentPosition, _lastPosition) > 0.01f)
             {
+                _lastPosition = currentPosition;
                 var bounds = Bounds; 
                 bounds.center = currentPosition;
                 Bounds = bounds;
