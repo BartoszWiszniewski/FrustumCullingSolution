@@ -97,6 +97,7 @@ namespace FrustumCullingSolution.Scripts.Collections
             var newSize = _size + _bufferSize;
             var newArray = new T[newSize];
             Array.Copy(_items, newArray, _size);
+            _items = newArray;
         }
     }
 }
